@@ -1,0 +1,429 @@
+* {
+    box-sizing: border-box;
+}
+
+
+/* Style the body */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+.mySlides {
+    display: none;
+}
+
+.slideimg {
+    vertical-align: middle;
+}
+
+
+/* Slideshow container */
+
+.slideshow-container {
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+}
+
+
+/* Caption text */
+
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+
+/* Number text (1/3 etc) */
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+
+/* The dots/bullets/indicators */
+
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    position: absolute;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active {
+    background-color: #717171;
+}
+
+
+/* Fading animation */
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+
+/* On smaller screens, decrease text size */
+
+@media only screen and (max-width: 300px) {
+    .text {
+        font-size: 11px
+    }
+}
+
+
+/* Style tab links */
+
+#myDIV {
+    overflow: hidden;
+    /* background-image: url("C:/Users/Sanjay Kumar/Desktop/nirvana/Images/header-midnightBlue.jpg");*/
+    background-color: white;
+    position: sticky;
+    position: -webkit-sticky;
+    width: 100%;
+    top: 0;
+}
+
+
+/* Style the navigation bar links */
+
+#myDIV a {
+    /*display: block;*/
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+
+/* Right-aligned link */
+
+#myDIV a.right {
+    float: right;
+}
+
+
+/* watermark  manu bar */
+
+.watermark {
+    width: 100px;
+    height: 80px;
+    float: left;
+    margin-top: 12px;
+    margin-left: 10px;
+}
+
+
+/* NirvanaMeet top manu bar*/
+
+#NirvanaMeet {
+    margin-top: 10px;
+    margin-left: 17px;
+    font-family: Saira;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 57px;
+    float: left;
+    color: purple;
+}
+
+#Features:hover,
+#PlansPricing:hover,
+#Support:hover,
+#AboutUs:hover {
+    background-color: white;
+    color: greenyellow;
+    cursor: pointer;
+}
+
+#myDIV ul {
+    float: right;
+    margin-right: 20px;
+}
+
+#myDIV ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+#myDIV ul li a {
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+
+/*home Manu Bar */
+
+#Home {
+    color: greenyellow;
+    cursor: pointer;
+}
+
+#Home,
+#Features,
+#PlansPricing,
+#Support,
+#AboutUs,
+#JoinMetting {
+    margin-top: 20px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 20px;
+    cursor: pointer;
+}
+
+
+/*loginButton*/
+
+.loginbtn {
+    margin-top: 28px;
+    width: 100px;
+    height: 40px;
+    background: #FBBB61;
+    box-shadow: 0px 4px 20px rgba(74, 50, 50, 0.26);
+    border-radius: 50px;
+    border: none;
+    margin-right: 10px;
+}
+
+.loginbtn:hover {
+    color: greenyellow;
+    background: whitesmoke;
+    cursor: pointer;
+}
+
+
+/* Column container */
+
+.row {
+    display: -ms-flexbox;
+    /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap;
+    /* IE10 */
+    flex-wrap: wrap;
+}
+
+
+/* Create two unequal columns that sits next to each other */
+
+
+/* Sidebar/left column */
+
+.side {
+    -ms-flex: 50%;
+    /* IE10 */
+    flex: 50%;
+    background-color: white;
+    padding: 20px;
+}
+
+
+/* Main column */
+
+.main {
+    -ms-flex: 50%;
+    /* IE10 */
+    flex: 50%;
+    background-color: white;
+    padding: 20px;
+}
+
+
+/* Footer */
+
+.footer {
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    background: #ddd;
+}
+
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+
+@media screen and (max-width: 700px) {
+    .row {
+        flex-direction: column;
+    }
+}
+
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+
+@media screen and (max-width: 400px) {
+    .navbar a {
+        float: none;
+        width: 100%;
+    }
+}
+
+.leftBackground {
+    background-image: url("C:/Users/Sanjay Kumar/Desktop/nirvana/Images/MakeInIndia.png");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    margin-top: 1px;
+    padding-top: 17px;
+    padding-bottom: 17px;
+}
+
+.RightBackground {
+    width: 100%;
+    height: 100%;
+}
+
+.MeetingBackground {
+    margin-top: 0x;
+}
+
+
+/*Enter Meeting Id*/
+
+.EnterMeetingID {
+    margin-top: 10px;
+    height: 40px;
+    width: 400px;
+    border: 0.1 rgba(0, 0, 0, 0.25);
+    border-radius: 17px;
+    margin-left: 12px;
+}
+
+
+/* Join Meeting Button*/
+
+.joinMettingBtn {
+    margin-top: 10px;
+    height: 40px;
+    width: 90px;
+    border: 1px;
+    border-radius: 17px;
+    background: yellow;
+    margin-left: 12px;
+}
+
+
+/*login background*/
+
+.loginbackground {
+    margin-top: 7px;
+    margin-left: 12px;
+}
+
+
+/*Heading 1 of h1*/
+
+.Heading1 {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 47px;
+    color: #3D3852;
+    margin-left: 17px;
+    margin-top: 3px;
+}
+
+.Heading5 {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 17px;
+    color: #3D3852;
+    margin-left: 17px;
+}
+
+
+/* Flickity */
+
+.Flickity {
+    -ms-flex: 100%;
+    /* IE10 */
+    flex: 100%;
+    background-color: white;
+    padding: 20px;
+}
+
+
+/* slider*/
+
+img {
+    vertical-align: middle;
+}
+
+
+/* Position the image container (needed to position the left and right arrows) */
+
+.container {
+    position: relative;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.prev,
+.next {
+    margin-top: 40px;
+}
+
+
+/* Six columns side by side */
+
+.column {
+    float: left;
+    width: 16.33%;
+}
+
+
+/* Add a transparency effect for thumnbail images */
+
+.demo {
+    opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+    opacity: 1;
+}

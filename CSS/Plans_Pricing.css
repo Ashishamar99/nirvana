@@ -1,0 +1,251 @@
+* {
+    box-sizing: border-box;
+}
+
+
+/* Style the body */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+
+/* Sticky navbar - toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed). The sticky value is not supported in IE or Edge 15 and earlier versions. However, for these versions the navbar will inherit default position */
+
+#myDIV {
+    overflow: hidden;
+    background-color: white;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+}
+
+
+/* Style the navigation bar links */
+
+#myDIV a {
+    /*display: block;*/
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+
+/* Right-aligned link */
+
+#myDIV a.right {
+    float: right;
+}
+
+
+/* Change color on hover */
+
+
+/*.navbar a:hover {
+background-color: #ddd;
+color: black;
+}*/
+
+
+/* watermark 2 */
+
+.watermark {
+    width: 100px;
+    height: 80px;
+    float: left;
+    margin-left: 10px;
+    margin-top: 12px;
+}
+
+
+/* NirvanaMeet */
+
+#NirvanaMeet {
+    margin-top: 10px;
+    margin-left: 17px;
+    font-family: Saira;
+    color: purple;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 57px;
+    float: left;
+}
+
+
+/* Style the active class, and buttons on mouse-over */
+
+#Home:hover,
+#Features:hover,
+#Support:hover,
+#AboutUs:hover {
+    background-color: white;
+    color: greenyellow;
+    cursor: pointer;
+}
+
+#myDIV ul {
+    float: right;
+    margin-right: 20px;
+}
+
+#myDIV ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+#myDIV ul li a {
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+#PlansPricing {
+    color: greenyellow;
+}
+
+#Home,
+#Features,
+#PlansPricing,
+#Support,
+#AboutUs,
+#JoinMetting {
+    margin-top: 20px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+    cursor: pointer;
+}
+
+
+/*loginButton*/
+
+.loginbtn {
+    margin-top: 28px;
+    width: 100px;
+    height: 40px;
+    background: #FBBB61;
+    box-shadow: 0px 4px 20px rgba(74, 50, 50, 0.26);
+    border-radius: 50px;
+    border: none;
+    margin-right: 10px;
+}
+
+.loginbtn:hover {
+    color: greenyellow;
+    background: whitesmoke;
+    cursor: pointer;
+}
+
+
+/* Column container */
+
+.row {
+    display: -ms-flexbox;
+    /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap;
+    /* IE10 */
+    flex-wrap: wrap;
+}
+
+
+/* Create two unequal columns that sits next to each other */
+
+
+/* Footer */
+
+.footer {
+    overflow: hidden;
+    position: sticky;
+    position: -webkit-sticky;
+    padding: 20px;
+    margin-bottom: 0px;
+    text-align: center;
+    background: #ddd;
+    height: 100%;
+}
+
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+
+@media screen and (max-width: 700px) {
+    .row {
+        flex-direction: column;
+    }
+}
+
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+
+@media screen and (max-width: 400px) {
+    .navbar a {
+        float: none;
+        width: 100%;
+    }
+    .footer {
+        float: none;
+        width: 100%;
+    }
+}
+
+.col-sm-12 {
+    width: 100%;
+    background-position: center;
+}
+
+.col-sm-4 {
+    margin-left: 30px;
+}
+
+.heading2 {
+    text-align: center;
+}
+
+.price1,
+.price2,
+.price3 {
+    width: 300px;
+    height: 500px;
+    margin-top: 7px;
+    margin-left: 80px;
+    margin-bottom: 25px;
+    box-shadow: 5px 4px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+}
+
+.price1-inner,
+.price2-inner,
+.price3-inner {
+    padding: 7px;
+    text-align: center;
+    background-color: skyblue;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.BuyNowBtn {
+    width: 194px;
+    height: 42px;
+    color: white;
+    background: blue;
+    border: none;
+    border-radius: 7px;
+}
+
+.BuyNowBtn:hover {
+    color: blue;
+    background: white;
+}
+
+h4 {
+    text-align: center;
+}
+
+ul {
+    color: skyblue;
+}

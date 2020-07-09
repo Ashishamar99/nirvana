@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Facebook Login JavaScript Example</title>
+<meta charset="UTF-8">
+</head>
+<body>
+<!-- The JS SDK Login Button -->
+<script src="JS/fb_login_button.js"></script>
+<div class="fb-login-button" data-size="large" data-button-type="login_with" data-layout="default"
+             data-auto-logout-link="false" data-use-continue-as="false" data-width=""
+             onlogin="checkLoginState();" scope="public_profile,email"></div>
+<!--
+<fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
+</fb:login-button> -->
+
+<!-- Load the JS SDK asynchronously -->
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>
+</body>
+</html>
