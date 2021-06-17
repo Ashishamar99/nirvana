@@ -51,7 +51,7 @@
             <li><a id="PlansPricing" class="tablinks" onclick="plansPricing()">Plans & pricing</a></li>
             <li><a id="Support" class="tablinks" onclick="supPort()">Support</a></li>
             <li><a id="AboutUs" class="tablink" onclick="aboutUs()">About Us</a></li>
-            <li><a id="JoinMetting" class="btn">Join Metting</a></li>
+            <li><a id="JoinMetting" onclick="homePage()" class="btn">Join Metting</a></li>
 
             <!--Google login-->
             <li>
@@ -79,7 +79,7 @@
                 <h5 class="Heading5">NirvanaMeet is an instant video conferencing platform that helps <br> you meet, discuss & build relationships from everywhere, on the go.</h5>
                 <div class="MeetingBackground">
                     <input class="EnterMeetingID" type="text " placeholder="Enter Meeting ID ">
-                    <button class="joinMettingBtn" type="submit ">Join Meeting</button>
+                    <button class="joinMettingBtn" onclick="console.warn(` URL = https://meet.jit.si/${document.getElementsByClassName('EnterMeetingID')[0].value}`);window.location.href = `https://meet.jit.si/${document.getElementsByClassName('EnterMeetingID')[0].value}`" type="submit ">Join Meeting</button>
                 </div>
                 <div class="loginbackground">
                     <a href="# " style="text-decoration: none;">Login.</a>
